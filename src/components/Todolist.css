@@ -1,0 +1,143 @@
+body {
+    background-color: rgba(12, 12, 12, 0.445);
+}
+
+.to-do-list {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    /* font-size: 4rem; */
+    color: white;
+}
+
+button {
+    font-size: 1.7mm;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.add-button {
+    background-color: green;
+    /* padding: 30px; */
+    font-size: 20px;
+    border-radius: 100px;
+}
+
+.add-button:hover {
+    background-color: rgb(236, 99, 7);
+}
+
+.delete-button {
+    background-color: red;
+    padding: 20px;
+    font-size: 10px;
+    border-radius: 100px;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+.move-button {
+    background-color: blue;
+    border-radius: 100px;
+}
+
+.move-button:hover {
+    background-color: darkblue;
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    /* padding: 10px; */
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    /* padding: 15px; */
+    background-color: rgb(247, 245, 245);
+    margin-bottom: 10px;
+    border: 3px solid rgba(235, 231, 231, 0.555);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+}
+
+.delete-button, .move-button {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .add-button {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .delete-button, .move-button {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+
+    li {
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+
+    input[type="text"] {
+        font-size: 1.4rem;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .add-button {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .delete-button, .move-button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    li {
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        font-size: 1.2rem;
+        padding: 6px;
+    }
+}
