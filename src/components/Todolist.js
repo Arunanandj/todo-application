@@ -51,7 +51,7 @@ function Todo() {
           onChange={handleInputChange}
         />
         <button className="add-button" onClick={addTask}>
-          Add
+          submit
         </button>
       </div>
       <ol>
